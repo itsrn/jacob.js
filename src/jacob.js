@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { tokenize, run } = require("./lexer");
 const fs = require("fs");
 const chalk = require("chalk");
