@@ -7,6 +7,9 @@
   "scripts": {
     "start": "node ./src/jacob.js"
   },
+  "bin": {
+    "jacob": "./src/jacob.js"
+  },
   "author": "ronuss",
   "license": "MIT",
   "dependencies": {
