@@ -2,6 +2,9 @@
   "name": "jacob.js",
   "type": "commonjs",
   "version": "0.3.1",
+  "repository": {
+    "url": "https://github.com/itsrn/jacob.js.git"
+  },
   "description": "A programming language, built with JavaScript. Still in development.",
   "main": "src/jacob.js",
   "scripts": {
