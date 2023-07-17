@@ -1,0 +1,16 @@
+{
+  "name": "jacob.js",
+  "type": "commonjs",
+  "version": "0.3.0",
+  "description": "A programming language, built with JavaScript. Still in development.",
+  "main": "src/jacob.js",
+  "scripts": {
+    "start": "node ./src/jacob.js"
+  },
+  "author": "ronuss",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
