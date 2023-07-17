@@ -1,7 +1,7 @@
 {
   "name": "jacob.js",
   "type": "commonjs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A programming language, built with JavaScript. Still in development.",
   "main": "src/jacob.js",
   "scripts": {
