@@ -1,7 +1,7 @@
 {
   "name": "jacob.js",
   "type": "commonjs",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "repository": {
     "url": "https://github.com/itsrn/jacob.js.git"
   },
@@ -11,7 +11,7 @@
     "start": "node ./src/jacob.js"
   },
   "bin": {
-    "jacob": "./src/jacob.js"
+    "jacob": "node ./src/jacob.js"
   },
   "author": "ronuss",
   "license": "MIT",
