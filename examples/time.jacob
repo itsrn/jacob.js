@@ -1,0 +1,1 @@
+#log[$hour():$minutes():$seconds()]

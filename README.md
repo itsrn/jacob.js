@@ -6,33 +6,59 @@ Currently, Jacob is still under development and I don't know when it will be don
 
 ## Installation
 
-You can install Jacob globally using npm:
+You can install Jacob globally through NPM:
 
 ```shell
 npm install -g jacob.js
 ```
+Or install it through the github repository:
 
-## Usage
+```shell
+npm install -g https://github.com/itsrn/jacob.js.git
+```
+
+## Getting started
 To run a Jacob script file, use the jacob command followed by the path to the script file:
 
 ```shell
 jacob path/to/script.jacob
 ```
 
-## Syntax
-Jacob supports the following syntax:
+### Syntax
+In Jacob, there are two types of things:
+- Functions, which looks like this: `#function[arguments]`
+- And variables, which looks like this: `$variable()` (no arguments)
 
-### Print Statement
-The print statement is used to display messages on the console:
+Instead of using a function for something that only returns a value and doesn't do anything (like getting the current hour number) we use variables.
+
+### Log statement
+The log statement is used to display messages on the console:
 ```jacob
-print("Hello, World!");
+#log[Hello World!]
 ```
+Which by running the jacob code will give us the output:
+```
+Hello World!
+```
+The log statement also has a second argument, which can log the string as an uppercase or lowercase.
+For example:
+```jacob
+#log[hello world!;uppercase]
+```
+Which will give us in the terminal:
+```
+HELLO WORLD!
+```
+
+### Time
+The time statements are used to get the current time parameters:
+
+- `$hour()`: Gets the current hour.
+- `$minutes()`: Gets the current minutes (without 0 at the start).
+- `$seconds()`: Gets the current seconds.
 
 ## Examples
-### Example 1: Hello World
-```jacob
-print("Hello, World!");
-```
+The examples are available in the [examples folder](/examples/).
 
 ## Contributing
 Contributions are welcome! If you find any issues or want to add new features, please submit a pull request.

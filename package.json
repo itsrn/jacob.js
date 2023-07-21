@@ -1,12 +1,12 @@
 {
   "name": "jacob.js",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "repository": {
     "url": "https://github.com/itsrn/jacob.js.git"
   },
   "description": "A programming language, built with JavaScript. Still in development.",
   "bin": {
-    "jacob": "./src/jacob.js"
+    "jacob": "./index.js"
   },
   "author": "ronuss",
   "license": "MIT",
