@@ -1,6 +1,6 @@
 {
   "name": "jacob.js",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": {
     "url": "https://github.com/itsrn/jacob.js.git"
   },
@@ -15,6 +15,6 @@
     "readline-sync": "^1.4.10"
   },
   "scripts": {
-    "start": "node ./src/jacob.js"
+    "start": "node ."
   }
 }
