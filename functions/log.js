@@ -3,18 +3,49 @@
 const chalk = require("chalk");
 
 function log(...args) {
-    const [message, option1] = args;
+    const [message, option1, option2] = args;
     if (option1 != undefined) {
         if (option1.trim().toLowerCase() == "uppercase") {
-            console.log(message.toUpperCase());
+            if(option2 != undefined && option2.trim().toLowerCase() == "blue"){
+                console.log(chalk.blue(message.toUpperCase()));
+            } else if (option2 != undefined && option2.trim().toLowerCase() == "red") {
+                console.log(chalk.red(message.toUpperCase()));
+            } else if (option2 != undefined && option2.trim().toLowerCase() == "yellow") {
+                console.log(chalk.yellow(message.toUpperCase()));
+            } else {
+                console.log(message.toUpperCase());
+            }
         } else if (option1.trim().toLowerCase() == "lowercase") {
-            console.log(message.toLowerCase());
+            if(option2 != undefined && option2.trim().toLowerCase() == "blue"){
+                console.log(chalk.blue(message.toLowerCase()));
+            } else if (option2 != undefined && option2.trim().toLowerCase() == "red") {
+                console.log(chalk.red(message.toLowerCase()));
+            } else if (option2 != undefined && option2.trim().toLowerCase() == "yellow") {
+                console.log(chalk.yellow(message.toLowerCase()));
+            } else {
+                console.log(message.toLowerCase());
+            }
         } else {
-            console.error(chalk.red(`[JACOB] ⛔ Argument 2 in #log can only be "uppercase" or "lowercase".`));
-            process.exit(1);
+            if(option2 != undefined && option2.trim().toLowerCase() == "blue"){
+                console.log(chalk.blue(message));
+            } else if (option2 != undefined && option2.trim().toLowerCase() == "red") {
+                console.log(chalk.red(message));
+            } else if (option2 != undefined && option2.trim().toLowerCase() == "yellow") {
+                console.log(chalk.yellow(message));
+            } else {
+                console.log(message);
+            }
         }
     } else {
-        console.log(message)
+        if(option2 != undefined && option2.trim().toLowerCase() == "blue"){
+            console.log(chalk.blue(message));
+        } else if (option2 != undefined && option2.trim().toLowerCase() == "red") {
+            console.log(chalk.red(message));
+        } else if (option2 != undefined && option2.trim().toLowerCase() == "yellow") {
+            console.log(chalk.yellow(message));
+        } else {
+            console.log(message);
+        }
     }
 }
 

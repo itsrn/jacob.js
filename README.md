@@ -6,15 +6,15 @@ Currently, Jacob is still under development and I don't know when it will be don
 
 ## Installation
 
-You can install Jacob globally through NPM:
+You can install the Jacob stable version through NPM:
 
 ```shell
 npm install -g jacob.js
 ```
-Or install it through the github repository:
+Or install it through the development github branch (not stable):
 
 ```shell
-npm install -g https://github.com/itsrn/jacob.js.git
+npm install -g "https://github.com/itsrn/jacob.js.git#development"
 ```
 
 ## Getting started
@@ -40,15 +40,13 @@ Which by running the jacob code will give us the output:
 ```
 Hello World!
 ```
-The log statement also has a second argument, which can log the string as an uppercase or lowercase.
-For example:
-```jacob
-#log[hello world!;uppercase]
-```
-Which will give us in the terminal:
-```
-HELLO WORLD!
-```
+The arguments for this function are the following:
+- First argument: 
+  - The string that will be logged to the console.
+- Second argument:
+  - "uppercase" or "lowercase". Sends the message to the console as that option.
+- Third argument:
+  - One of the following colors: "blue", "red", "yellow". Sends the message as that color.
 
 ### Time
 The time statements are used to get the current time parameters:
