@@ -1,3 +1,6 @@
+# Archived
+I've archived this repo due to inactivity and to spend more time on other projects and school stuff.
+
 # Jacob Programming Language (AKA jacob.js)
 Jacob is a (kind-of) programming language that is built with JavaScript and allows you to perform basic operations and execute scripts.
 
